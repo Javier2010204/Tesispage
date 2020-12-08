@@ -9,6 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 
 import '../css/app.scss'
+import '../css/colors.scss'
 
 const images = require.context('../images', true)
 
