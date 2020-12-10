@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2020_12_10_061148) do
     t.string "way_to_pay"
     t.string "type_of_service"
     t.string "discover"
+    t.boolean "reader", default: true
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

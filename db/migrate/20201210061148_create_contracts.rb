@@ -16,6 +16,7 @@ class CreateContracts < ActiveRecord::Migration[6.0]
       t.string :way_to_pay
       t.string :type_of_service
       t.string :discover
+      t.boolean :reader, default: true
 
       t.timestamps
     end

@@ -1,0 +1,12 @@
+<div class="email--background" style="background: #eee; padding: 10px; text-align: center;">
+    <div class="email--container" style="max-width: 500px; background: #fff; margin: 0 auto;overflow: hidden; border-radius: 5px;">
+        <img src="https://res.cloudinary.com/dvyggfmnj/image/upload/v1607615212/480-320_P._etur0l.png" style="max-width: 100%; display: block;">
+
+        <div class="email--inner-container" style="padding: 0 5% 40px;">
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;">Estimado(a): <span><%= @contract.name %></span> gracias por su confianza, usted ha aceptado los términos y condiciones de nuestro contrato, ahora puede descargar una versión física del mismo.
+            <b>RECUERDE ENVIAR SU CONSTANCIA DE PAGO A ESTE MAIL. GRACIAS</b>
+            </p>
+            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1HxG2ig27cBbP42r2dH89X_0K6GgMHnfR/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
+        </div>
+    </div>
+</div>
