@@ -7,6 +7,11 @@ class HomeController < ApplicationController
 
   def info
   end
+
+  def payment
+    
+  end
+  
   
   
 end
