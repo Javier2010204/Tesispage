@@ -4,6 +4,9 @@
             <div class="video-wrap">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/GjHzGrb1hYs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <div class="footer">
+                <p>los plazos son tentativos</p>
+            </div>
         </div>
     </div>
 </div>
@@ -13,11 +16,8 @@
             <h1 class="black-text"></h1>
             <div id="youtube-buttons">
                 <%= link_to 'Deseo contratar los servicios', new_contract_path, class: 'btn-info' %>
-                <%= link_to 'Tengo algunas dudas', root_path, class: 'btn-secondary' %>
+                <%= link_to 'Tengo algunas dudas', new_question_path, class: 'btn-secondary' %>
             </div>
         </div>
     </div>
-</div>
-<div class="footer">
-    <p>*los plazos son tentativos</p>
 </div>

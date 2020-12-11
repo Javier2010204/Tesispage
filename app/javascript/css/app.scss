@@ -198,7 +198,7 @@ html, body{
 
 @media (min-width: 320px) and (max-width: 768px){
     #utesis{
-        background-image: url('~utesis--xs.png');
+        background-image: url('~utesis--sm.png');
     } 
 
     #author{
@@ -359,16 +359,14 @@ html, body{
 }
 
 #heraldica{
-    height: 100px;
-    width: 100px;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid white; 
+    border-left: 100px solid transparent; 
     position: fixed;
-    background-color: white;
     bottom: 5px;
     right: 5px;
-    border-radius: 50%;
     background-image: url('~heraldica.jpeg');
-    background-position: center;
-    background-size: cover;
 }
 
 .black-text{
@@ -390,13 +388,15 @@ html, body{
   }
 
   .footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    background-color: #000000;
+    background-color: #9A9B9C;
     color: white;
     text-align: center;
+    padding: 5px;
+  }
+
+  .footer p{
+      margin: 0;
   }
 
   .card{
