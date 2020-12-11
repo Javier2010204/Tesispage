@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :place %>
+    <%= form.label 'Lugar' %>
     <%= form.text_field :place %>
   </div>
 
   <div class="field">
-    <%= form.label :name %>
+    <%= form.label 'Nombre completo'%>
     <%= form.text_field :name %>
   </div>
 
@@ -33,7 +33,8 @@
 
   <div class="field">
     <%= form.label :marital_status %>
-    <%= form.text_field :marital_status %>
+    <% estados = ['Soltero', 'Casado']%>
+    <%= form.select(:marital_status, estados, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
@@ -48,7 +49,8 @@
 
   <div class="field">
     <%= form.label :service_to_hire %>
-    <%= form.text_field :service_to_hire %>
+    <% servicios = ['Desarrollo tema de tesis', 'Desarrollo plan de tesis', 'Desarrollo de tesis', 'Desarrollo de proceso completo(tema, plan y tesis)', 'Correcciones', 'Otros']%>
+    <%= form.select(:service_to_hire, servicios, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
@@ -73,17 +75,20 @@
 
   <div class="field">
     <%= form.label :way_to_pay %>
-    <%= form.text_field :way_to_pay %>
+    <% formas = ['Efectivo', 'Tarjeta', 'Pago en linea', 'Cheque', 'Deposito en caja de banco']%>
+    <%= form.select(:way_to_pay, formas, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
     <%= form.label :type_of_service %>
-    <%= form.text_field :type_of_service %>
+    <% tipos_de_servicio = ['Servicio basico', 'Servicio completo']%>
+    <%= form.select(:type_of_service, tipos_de_servicio, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
     <%= form.label :discover %>
-    <%= form.text_field :discover %>
+    <% descubrimiento = ['Referencias','Volantes', 'Afiches', 'Facebook', 'Instagram', 'Twitter', 'Youtube', 'Google', 'Otros']%>
+    <%= form.select(:discover, descubrimiento, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="actions">

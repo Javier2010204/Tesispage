@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 2020_12_10_061148) do
     t.string "service_to_hire"
     t.string "career"
     t.string "academic_degree"
-    t.decimal "amount_pay"
+    t.decimal "amount_pay", precision: 8, scale: 2
     t.integer "fractional_payment"
     t.string "way_to_pay"
     t.string "type_of_service"
