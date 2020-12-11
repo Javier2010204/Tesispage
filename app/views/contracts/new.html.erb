@@ -1,5 +1,12 @@
-<h1>New Contract</h1>
+<div class="row center-xs middle-xs">
+    <div class="col-xs-12">
+        <div class="box">
+            <h1>Contrato Utesis</h1>
+            <%= render 'form', contract: @contract %>
+        </div>
+    </div>
+</div>
+<div>
+    <%= link_to 'Regresar al inicio', root_path %>
+</div>
 
-<%= render 'form', contract: @contract %>
-
-<%= link_to 'Back', contracts_path %>

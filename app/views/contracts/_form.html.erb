@@ -22,76 +22,76 @@
   </div>
 
   <div class="field">
-    <%= form.label :document_id %>
+    <%= form.label 'Numero de documento de identificacion' %>
     <%= form.text_field :document_id %>
   </div>
 
   <div class="field">
-    <%= form.label :age %>
+    <%= form.label 'Edad' %>
     <%= form.number_field :age %>
   </div>
 
   <div class="field">
-    <%= form.label :marital_status %>
+    <%= form.label 'Estado civil' %>
     <% estados = ['Soltero', 'Casado']%>
     <%= form.select(:marital_status, estados, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
-    <%= form.label :phone %>
+    <%= form.label 'Numero de telefono' %>
     <%= form.number_field :phone %>
   </div>
 
   <div class="field">
-    <%= form.label :email %>
+    <%= form.label 'Correo electronico'%>
     <%= form.text_field :email %>
   </div>
 
   <div class="field">
-    <%= form.label :service_to_hire %>
+    <%= form.label 'Servicio que desea contratar' %>
     <% servicios = ['Desarrollo tema de tesis', 'Desarrollo plan de tesis', 'Desarrollo de tesis', 'Desarrollo de proceso completo(tema, plan y tesis)', 'Correcciones', 'Otros']%>
     <%= form.select(:service_to_hire, servicios, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
-    <%= form.label :career %>
+    <%= form.label 'Carrera' %>
     <%= form.text_field :career %>
   </div>
 
   <div class="field">
-    <%= form.label :academic_degree %>
+    <%= form.label 'Grado academico' %>
     <%= form.text_field :academic_degree %>
   </div>
 
   <div class="field">
-    <%= form.label :amount_pay %>
+    <%= form.label 'Monto total a pagar'%>
     <%= form.text_field :amount_pay %>
   </div>
 
   <div class="field">
-    <%= form.label :fractional_payment %>
+    <%= form.label 'Pagos en que fraccionara el monto total' %>
     <%= form.number_field :fractional_payment %>
   </div>
 
   <div class="field">
-    <%= form.label :way_to_pay %>
+    <%= form.label 'Forma de pago' %>
     <% formas = ['Efectivo', 'Tarjeta', 'Pago en linea', 'Cheque', 'Deposito en caja de banco']%>
     <%= form.select(:way_to_pay, formas, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
-    <%= form.label :type_of_service %>
+    <%= form.label 'Tipo de servicio' %>
     <% tipos_de_servicio = ['Servicio basico', 'Servicio completo']%>
     <%= form.select(:type_of_service, tipos_de_servicio, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="field">
-    <%= form.label :discover %>
+    <%= form.label 'Forma en la que se enteró de nosotros' %>
     <% descubrimiento = ['Referencias','Volantes', 'Afiches', 'Facebook', 'Instagram', 'Twitter', 'Youtube', 'Google', 'Otros']%>
     <%= form.select(:discover, descubrimiento, {:prompt => "Seleccione uno"})%>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'Aceptar'%>
   </div>
 <% end %>
