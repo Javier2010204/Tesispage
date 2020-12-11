@@ -1,0 +1,18 @@
+<div class="email--background" style="background: #eee; padding: 10px; text-align: center;">
+    <div class="email--container" style="max-width: 500px; background: #fff; margin: 0 auto;overflow: hidden; border-radius: 5px;">
+        <img src="https://res.cloudinary.com/dvyggfmnj/image/upload/v1607615212/480-320_P._etur0l.png" style="max-width: 100%; display: block;">
+
+        <div class="email--inner-container" style="padding: 0 5% 40px;">
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 10px;">Nombre:<%= @question.name %>
+            </p>
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 10px;">Pais:<%= @question.country %>
+            </p>
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 10px;">Carrera:<%= @question.career %>
+            </p>
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 10px;">Universidad:<%= @question.university %>
+            </p>
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;"><%= @question.body %>
+            </p>
+        </div>
+    </div>
+</div>
