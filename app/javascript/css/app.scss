@@ -152,6 +152,7 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(24, 39, 51, 0.95);
 }
 
 .menu-wrap .menu > div{
@@ -227,6 +228,34 @@ html, body{
     #experiencia{
         background-image: url('~experiencia--xs.png');
     }
+
+    .title--2{
+        font-size: 2.5em;
+    }
+
+    .body-font{
+        font-size: 1em;
+    }
+
+    #youtube-buttons{
+        height: 500px;
+    }
+
+    #youtube-buttons a{
+        margin-top: 1em;
+        display: block;
+        overflow: auto;
+    }
+
+    .video-wrap iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200px;
+      }
+
+
 }
 
 @media (min-width: 768px ) and (max-width: 1024px){
@@ -293,6 +322,14 @@ html, body{
     #experiencia{
         background-image: url('~experiencia--md.png');
     }
+
+    .title--2{
+        font-size: 60px;
+    }
+
+    .body-font{
+        font-size: 20px;
+    }
 }
 
 .top-space{
@@ -312,6 +349,7 @@ html, body{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: 300;
 }
 
 .btn-secondary{
@@ -389,3 +427,5 @@ html, body{
     border-radius: 4px;
     box-sizing: border-box;
   }
+  
+
