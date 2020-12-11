@@ -1,15 +1,21 @@
 <div class="row center-xs middle-xs">
-    <div class="col-xs-12">
+    <div class="col-xs-12 col-md-10">
         <div class="box">
-            <h1>Tienes dificultades con tu tesis?</h1>
-            <p>Aqui tienes un video con información que te puede ayudar</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GjHzGrb1hYs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <div>
-                <%= link_to 'Mas Informacion', info_path %>
-            </div>
-            <div>
-                <%= link_to 'volver al inicio', root_path %>
+            <div class="video-wrap">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GjHzGrb1hYs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </div>
+</div>
+<div class="row center-xs middle-xs top-space--3">
+    <div class="col-xs-12 col-sm-8 col-md-8">
+        <div class="box">
+            <h1 class="black-text"></h1>
+            <%= link_to 'Deseo contratar los servicios', info_path, class: 'btn-info' %>
+            <%= link_to 'Tengo algunas dudas', root_path, class: 'btn-secondary' %>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>*los plazos son tentativos</p>
 </div>
