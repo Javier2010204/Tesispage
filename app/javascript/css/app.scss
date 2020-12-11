@@ -188,6 +188,7 @@ html, body{
     font-size: 1.5rem;
     list-style: circle;
     text-align: left;
+    margin-top: 5px;
 }
 
 .menu-wrap .menu > div > div > ul > li > a{
@@ -253,7 +254,7 @@ html, body{
         left: 0;
         width: 100%;
         height: 200px;
-      }
+    }
 
 
 }
@@ -366,7 +367,6 @@ html, body{
     position: fixed;
     bottom: 5px;
     right: 5px;
-    background-image: url('~heraldica.jpeg');
 }
 
 .black-text{
@@ -406,6 +406,10 @@ html, body{
 
   .justify-text{
       text-align: justify;
+  }
+
+  .text-light{
+      font-weight: lighter;
   }
 
   .field{
