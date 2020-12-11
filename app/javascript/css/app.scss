@@ -360,3 +360,32 @@ html, body{
     color: white;
     text-align: center;
   }
+
+  .card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px 15px;
+  }
+
+  .justify-text{
+      text-align: justify;
+  }
+
+  .field{
+    border-radius: 5px;
+    padding: 20px;
+    color: #000000;
+  }
+
+  .field label{
+      text-align: justify;
+  }
+
+  .form-control{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

@@ -13,85 +13,94 @@
 
   <div class="field">
     <%= form.label 'Lugar' %>
-    <%= form.text_field :place %>
+    <%= form.text_field :place, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Nombre completo'%>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Numero de documento de identificacion' %>
-    <%= form.text_field :document_id %>
+    <%= form.text_field :document_id, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Edad' %>
-    <%= form.number_field :age %>
+    <%= form.number_field :age, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Estado civil' %>
     <% estados = ['Soltero', 'Casado']%>
-    <%= form.select(:marital_status, estados, {:prompt => "Seleccione uno"})%>
+    <%= form.select(:marital_status, estados, {:prompt => "Seleccione uno"}, class: 'form-control')%>
   </div>
 
   <div class="field">
     <%= form.label 'Numero de telefono' %>
-    <%= form.number_field :phone %>
+    <%= form.number_field :phone, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Correo electronico'%>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Servicio que desea contratar' %>
     <% servicios = ['Desarrollo tema de tesis', 'Desarrollo plan de tesis', 'Desarrollo de tesis', 'Desarrollo de proceso completo(tema, plan y tesis)', 'Correcciones', 'Otros']%>
-    <%= form.select(:service_to_hire, servicios, {:prompt => "Seleccione uno"})%>
+    <%= form.select(:service_to_hire, servicios, {:prompt => "Seleccione uno"}, class: 'form-control')%>
   </div>
 
   <div class="field">
     <%= form.label 'Carrera' %>
-    <%= form.text_field :career %>
+    <%= form.text_field :career, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Grado academico' %>
-    <%= form.text_field :academic_degree %>
+    <%= form.text_field :academic_degree, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Monto total a pagar'%>
-    <%= form.text_field :amount_pay %>
+    <%= form.text_field :amount_pay, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Pagos en que fraccionara el monto total' %>
-    <%= form.number_field :fractional_payment %>
+    <%= form.number_field :fractional_payment, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Forma de pago' %>
     <% formas = ['Efectivo', 'Tarjeta', 'Pago en linea', 'Cheque', 'Deposito en caja de banco']%>
-    <%= form.select(:way_to_pay, formas, {:prompt => "Seleccione uno"})%>
+    <%= form.select(:way_to_pay, formas, {:prompt => "Seleccione uno"}, class: 'form-control')%>
   </div>
 
   <div class="field">
     <%= form.label 'Tipo de servicio' %>
     <% tipos_de_servicio = ['Servicio basico', 'Servicio completo']%>
-    <%= form.select(:type_of_service, tipos_de_servicio, {:prompt => "Seleccione uno"})%>
+    <%= form.select(:type_of_service, tipos_de_servicio, {:prompt => "Seleccione uno"}, class: 'form-control')%>
   </div>
 
   <div class="field">
     <%= form.label 'Forma en la que se enteró de nosotros' %>
     <% descubrimiento = ['Referencias','Volantes', 'Afiches', 'Facebook', 'Instagram', 'Twitter', 'Youtube', 'Google', 'Otros']%>
-    <%= form.select(:discover, descubrimiento, {:prompt => "Seleccione uno"})%>
+    <%= form.select(:discover, descubrimiento, {:prompt => "Seleccione uno"}, class: 'form-control')%>
+  </div>
+  <div>
+    <p class="black-text justify-text">Todos los puntos de esta contratación están estrictamente apegados a los aspectos legales establecidos por la Organización Mundial de Comercio relativo al comercio electrónico, así como lo relativo a la Declaración sobre el Comercio Electrónico Mundial de la Organización Mundial del Comercio (OMC). Toda persona individual o jurídica que contrate los servicios de Utesis.com Latinoamérica acepta y ratifica sin excepción alguna todas y cada una de las políticas que se desarrollan a continuación. El servicio de investigación será prestado únicamente en idioma español. UNO: Objeto. EL CONTRATANTE solicita a Utesis.com el desarrollo de una investigación de cualquier tipo para la obtención de información con fines personales y/o académicos, información que puede consistir en: textos, gráficos, archivos de sonido y/o imagen, fotografías, diseños, entre otros. DOS. Derechos de Autor. Utesis.com deberá́ respetar y reconocer los derechos de autor en los contenidos que genere a través de investigaciones de cualquier tipo (informaciones, textos, gráficos, archivos de sonido y/o imagen, fotografías, diseños, entre otros) información que por este medio desde ya cede a EL CONTRATANTE a quien se permite: su reproducción, distribución o modificación, a menos que sea necesario de conformidad con la Ley contar con la autorización de sus legítimos titulares. TRES: Fechas. EL CONTRATANTE debe esperar recibir contenido pactado en la fecha pactadas con los profesionales de Utesis.com las cuales quedarán registradas y establecidas por mutuo acuerdo mediante la plataforma o correo electrónico de Utesis.com CUATRO. Responsabilidad de la información. EL CONTRATANTE asumirá́ plenamente la responsabilidad ante terceros sobre el uso que haga de la información recibida. Utesis.com no será́ responsable ante terceros de las consecuencias que pudieran derivarse del uso de información por EL CONTRATANTE. La validez de los trabajos de investigación desarrollados por Utesis.com son totalmente independientes del criterio del asesor o consejero u otros de cada centro de estudios o de cualquier persona en general ya que se tiene por aceptado el trabajo desde el momento de la efectiva recepción por parte de EL CONTRATANTE y hasta tres días después, tiempo dentro del que deberá manifestar su inconformidad cuando así́ proceda y de manera escrita a Utesis.com. La razón de ser del plazo de los tres días en mención es para que EL CONTRATANTE emita opinión respecto del documento que recibe en aras de señalar alguna modificación que considere necesaria que sea hecha por Utesis.com a través de sus profesionales. Se entiende que este plazo no involucra a la universidad y sus asesores ya que es un lapso para que EL CONTRATANTE opine sobre el trabajo. CINCO. Del asesor. Prohibiciones. EL CONTRATANTE tiene prohibido el acceso al número telefónico, dirección particular o profesional y demás datos personales del o los profesionales asesores o investigadores de Utesis.com que contacte a través de la plataforma de Utesis.com. SEIS. Correcciones. Correcciones en trabajos completos. EL CONTRATANTE tiene derecho a correcciones de fondo y de forma que sean ordenadas por el asesor de la universidad que corresponda, respecto de los trabajos que Utesis.com haya desarrollado y dentro de los doce meses de la entrega del trabajo que se trate sin costo adicional al pactado a sabiendas que, si existieren más correcciones luego de dicho lapso, tendrán un costo adicional dependiendo de la naturaleza de estas. Utesis.com tendrá́ por aceptado cada trabajo entregado a EL CONTRATANTE luego de tres días de recibido por este, lapso en el cual deberá́ aceptarlo total o parcialmente o bien rechazarlo total o parcialmente, sin perjuicio de las correcciones a dicho trabajo que el asesor de la universidad ordenase. En el caso que EL CONTRATANTE no se pronuncie al respecto dentro del plazo mencionado el trabajo se tendrá́ por aceptado (lo cual no afecta el derecho EL CONTRATANTE de requerir las correcciones pertinentes) y no podrá́ solicitar devolución dineraria alguna si fuere el caso. En los casos en los que el cliente haya contratado el servicio exclusivamente para correcciones de un trabajo no desarrollado por Utesis.com se estará́ a lo que se pacte en ese momento. Dicho pacto quedará perfeccionado a través de la plataforma o correos electrónicos de utesis.com. Las correcciones requeridas por EL CONTRATANTE se desarrollarán en un lapso racionalmente aceptado por las partes dependiendo del tipo de correcciones que se trate. SIETE. Utesis.com no está en la obligación de elaborar caratulas, portadas, contraportadas, dedicatorias, introducción ni resumen, entre otros del trabajo de investigación contratado sino únicamente la información objeto de interés del cliente con sus respectivas bibliografías con reconocimiento de los derechos de autor que correspondan de conformidad con la Ley además de su respectivo índice. OCHO. Manuales de trabajo. Para plasmar la información derivada de la investigación académica, Utesis.com hará́ uso de los manuales o guías de forma que facilite EL CONTRATANTE, siempre que el servicio pagado lo contemple ya que en caso contrario recibirá la información bajo los parámetros que Utesis.com considare pertinentes en ese momento. EL CONTRATANTE debe facilitar los manuales o guías en mención ya que Utesis.com ni sus profesionales lo harán. NUEVE. Causas de fuerza mayor o siniestros.Utesis.com tratará de mantener los Servicios permanentemente disponibles, y tratará de conservar los datos que estos Servicios contengan, es posible que, por fallo técnico, actos de fuerza mayor, mantenimiento u otras causas, los servicios dejen de estar disponibles o se pierdan datos. Utesis.com no asume responsabilidad alguna relativa a indisponibilidad de Servicios ni relativa a pérdida de datos y no ofrece garantías de funcionamiento permanente de los servicios pactados en casos fortuitos o de siniestros naturales, ni de acceso ininterrumpido a los servicios, ni de restablecimiento de los servicios en un plazo concreto, ni de conservación o integridad de los datos almacenados. DIEZ. Sobre el uso de la web y redes sociales. El Usuario se compromete a utilizar la Web, páginas de Facebook o cualquier otra red social de Utesis.com sin contravenir la legislación vigente, la buena fe, los usos generalmente aceptados y el orden público. ONCE. Suspensión o cancelación de servicios. EL CONTRATANTE reconoce la facultad de Utesis.com para suspender temporalmente o cancelar definitivamente la prestación de sus servicios por causas de fuerza mayor insuperables o si considera que EL CONTRATANTE no ha cumplido con alguna de estas condiciones y políticas de Utesis.com que son del conocimiento de EL CONTRATANTE. EL CONTRATANTE manifiesta conocer a la perfección las políticas de la empresa contenidas en el sitio Web: www.utesis.com/politicas En el caso de cancelación o suspensión, Utesis.com informará al cliente al respecto a través de la plataforma, vía telefónica o a través del correo electrónico indicado en este instrumento. DOCE. Pagos. Todos los pagos se efectuarán mediante cuentas bancarias a nombre de Utesis.com o de alguno de los socios fundadores de dicha entidad mercantil o a través de cualquier método electrónico avalado y brindado por la empresa. También EL CONTRATANTE puede efectuar pagos por cualquier otro medio como tarjetas de crédito o débito, pagos en línea, cheques, transferencias monetarias, etc. dependiendo del país en donde Utesis.com preste sus servicios, siempre que este sea autorizado por Utesis.com. Ningún miembro de Utesis.com está autorizado para la recepción de dinero en efectivo dentro o fuera de las instalaciones de Utesis.com. Los pagos en caso de fraccionar el monto total del servicio que prestará Utesis.com deberán efectuarse en un plazo no mayor a tres meses consecutivos contados a partir de la fecha del presente instrumento. En caso de incumplimiento de pago se tendrá́ por finalizado este instrumento legal sin ninguna responsabilidad por parte de Utesis.com por lo que tampoco se procederá́ a devolución alguna de montos pagados a la entidad mercantil en mención por lo que no se procederá́ a devolución de lo pagado por ninguna razón. Inicio posterior. Si EL CONTRATANTE hace un solo pago o pagos parciales (sin que estos sobrepasen el plazo de tres meses) que representen la totalidad del monto pactado con Utesis.com dicha entidad mercantil tendrá́ la obligación de darle estricto cumplimiento a este pacto legal y a lo que se pacte con EL CONTRATANTE, aunque éste último desee iniciar con el servicio en cualquier fecha posterior y diferente a la fecha de la contratación. En el caso de que EL CONTRATANTE haya terminado de pagar el monto total del servicio contratado y no haya su proceso de investigación o de tesis (o semejante) avanzado por razones ajenas a Utesis.com dicha entidad mercantil deberá continuar prestando el servicio hasta la finalización exitosa del mismo, sin perjuicio de EL CONTRATANTE tomando en consideración que ésta no podrá durar mas de un año. En caso de excederse del tiempo en mención EL CONTRATANTE podrá requerir una prórroga de seis meses mas. TRECE. Devoluciones. Se procederá́ a una devolución total o parcial del monto pagado en los casos en los que Utesis.com incurra en incumplimiento del presente instrumento para lo cual se estará́ a las políticas de devolución contenidas en el portal web: www.utesis.com/politicas mismas que EL CONTRATANTE manifiesta que son de su entero conocimiento y que las acepta al adquirir los servicios de Utesis.com. No se procederá́ a devolución en los casos en el que el cliente decida la terminación de la relación por prestación de servicios por otra causa. Se prohíbe la cesión del servicio a otra u otras personas por parte de EL CONTRATANTE. CATORCE: Confidencialidad y Exclusividad. Utesis.com tiene totalmente prohibido divulgar, facilitar, vender o enajenar de cualquier forma a terceras personas por cualquier medio información o datos personales de EL CONTRATANTE o de la investigación que se desarrolle para éste así́ como tampoco puede utilizar datos obtenidos a raíz de la investigación objeto del presente instrumento para otros contratantes. QUINCE. Vigencia. El presente instrumento se perfecciona desde el momento en el que EL CONTRATANTE haga efectivo el pago pactado por los servicios de Utesis.com. Luego de haber leído y enterado del objeto y validez de términos y condiciones de la adquisición del servicio de Utesis.com, lo acepto y ratifico.
+
+***Inmediatamente al aceptar los términos y condiciones, usted recibirá una copia de estos en su correo electrónico. Si no recibió la copia en su bandeja de entrada le sugerimos revisar las bandejas de: “correos no deseados” o “Spam.” Si no lo ha recibido, seguramente colocó erróneamente la dirección de su correo electrónico por lo que deberá llenar nuevamente el contrato***</p>
+  </div>
+  <div class="field">
+    <%= form.label 'he leido y acepto los terminos y condiciones'%>
+    <%= form.check_box :reader%>
   </div>
 
   <div class="actions">
-    <%= form.submit 'Aceptar'%>
+    <%= form.submit 'Aceptar', class: 'btn-info'%>
   </div>
 <% end %>
