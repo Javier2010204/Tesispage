@@ -1,0 +1,57 @@
+<%= form_with(model: contact, local: true) do |form| %>
+  <% if contact.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+        <% contact.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label 'Nombre completo' %>
+    <%= form.text_field :name, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Número de teléfono' %>
+    <%= form.number_field :phone, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'País' %>
+    <%= form.text_field :country, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Carrera' %>
+    <%= form.text_field :career, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Grado académico' %>
+    <%= form.text_field :academic_degree, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.text_field :email, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Tiempo de entrega' %>
+    <%= form.text_field :time_to_deliver, class: 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label 'Enumere y explique ordenadamente qué es lo que necesita. Si se trata de un documento con correcciones deberá enumerarlas una a una  y adjuntar el documento a corregir. Recuerde brindar detalles sustanciales para una correcta evaluación y enviar los documentos que considere necesarios.' %>
+    <%= form.text_area :body, class: 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Enviar', class: 'btn-info'%>
+  </div>
+<% end %>

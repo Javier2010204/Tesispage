@@ -22,7 +22,7 @@
   </div>
 
   <div class="field">
-    <%= form.label 'Numero de documento de identificacion' %>
+    <%= form.label 'Número de documento de identificación' %>
     <%= form.text_field :document_id, class: 'form-control' %>
   </div>
 
@@ -38,12 +38,12 @@
   </div>
 
   <div class="field">
-    <%= form.label 'Numero de telefono' %>
+    <%= form.label 'Número de teléfono' %>
     <%= form.number_field :phone, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label 'Correo electronico'%>
+    <%= form.label 'Email'%>
     <%= form.text_field :email, class: 'form-control' %>
   </div>
 
@@ -59,7 +59,7 @@
   </div>
 
   <div class="field">
-    <%= form.label 'Grado academico' %>
+    <%= form.label 'Grado académico' %>
     <%= form.text_field :academic_degree, class: 'form-control' %>
   </div>
 
@@ -69,13 +69,13 @@
   </div>
 
   <div class="field">
-    <%= form.label 'Pagos en que fraccionara el monto total' %>
+    <%= form.label 'Pagos en que fraccionará el monto total' %>
     <%= form.number_field :fractional_payment, class: 'form-control' %>
   </div>
 
   <div class="field">
     <%= form.label 'Forma de pago' %>
-    <% formas = ['Efectivo', 'Tarjeta', 'Pago en linea', 'Cheque', 'Deposito en caja de banco']%>
+    <% formas = ['Efectivo', 'Tarjeta', 'Pago en línea', 'Cheque', 'Depósito en caja de banco']%>
     <%= form.select(:way_to_pay, formas, {:prompt => "Seleccione uno"}, class: 'form-control')%>
   </div>
 

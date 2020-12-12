@@ -1,0 +1,14 @@
+<div class="cover cover-volcano">
+    <div class="row center-xs middle-xs">
+        <div class="col-xs-12 col-md-6">
+            <div class="box card">
+                <h1 class="black-text">Formulario de contacto</h1>
+                <p class="black-text justify-text">Llene lo requesitos necesarios para la evaluación de su requerimiento.  El tiempo de respuesta depende del trabajo a evaluar, pero normalmente es de 1 día hábil. </p>
+                <%= render 'form', contact: @contact %>
+            </div>
+        </div>
+    </div>
+    <div class="top-space">
+        <%= link_to 'Regresar al inicio', root_path, class:'btn-secondary' %>
+    </div>
+</div>

@@ -9,8 +9,12 @@ class HomeController < ApplicationController
   end
 
   def payment
+  end
+
+  def politicas
     
   end
+  
   
   
   

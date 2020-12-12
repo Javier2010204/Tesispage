@@ -1,12 +1,13 @@
-<div class="row center-xs middle-xs">
-    <div class="col-xs-12 col-md-6">
-        <div class="box card">
-            <h1 class="black-text">Contrato Utesis</h1>
-            <%= render 'form', contract: @contract %>
+<div class="cover cover-volcano">
+    <div class="row center-xs middle-xs">
+        <div class="col-xs-12 col-md-6">
+            <div class="box card">
+                <h1 class="black-text">Términos y condiciones</h1>
+                <%= render 'form', contract: @contract %>
+            </div>
         </div>
     </div>
+    <div class="top-space">
+        <%= link_to 'Regresar al inicio', root_path, class:'btn-secondary' %>
+    </div>
 </div>
-<div class="top-space">
-    <%= link_to 'Regresar al inicio', root_path, class:'btn-secondary' %>
-</div>
-

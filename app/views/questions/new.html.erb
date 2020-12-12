@@ -1,12 +1,17 @@
-<div class="row center-xs middle-xs">
-    <div class="col-xs-12 col-md-6">
-        <div class="box card">
-            <h1 class="black-text">Escribe tu duda</h1>
-            <%= render 'form', question: @question %>
+<div class="cover cover-volcano">
+    <div class="row center-xs middle-xs">
+        <div class="col-xs-12 col-md-6">
+            <div class="box card top-space">
+                <div class="large-padding">
+                    <h1 class="black-text">Escribe tu duda</h1>
+                    <%= render 'form', question: @question %>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="top-space">
+        <%= link_to 'Regresar al inicio', root_path, class:'btn-secondary' %>
+    </div>
 </div>
-<div class="top-space">
-    <%= link_to 'Regresar al inicio', root_path, class:'btn-secondary' %>
-</div>
+
 

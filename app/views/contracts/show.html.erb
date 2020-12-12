@@ -1,79 +1,12 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Place:</strong>
-  <%= @contract.place %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @contract.name %>
-</p>
-
-<p>
-  <strong>Document:</strong>
-  <%= @contract.document_id %>
-</p>
-
-<p>
-  <strong>Age:</strong>
-  <%= @contract.age %>
-</p>
-
-<p>
-  <strong>Marital status:</strong>
-  <%= @contract.marital_status %>
-</p>
-
-<p>
-  <strong>Phone:</strong>
-  <%= @contract.phone %>
-</p>
-
-<p>
-  <strong>Email:</strong>
-  <%= @contract.email %>
-</p>
-
-<p>
-  <strong>Service to hire:</strong>
-  <%= @contract.service_to_hire %>
-</p>
-
-<p>
-  <strong>Career:</strong>
-  <%= @contract.career %>
-</p>
-
-<p>
-  <strong>Academic degree:</strong>
-  <%= @contract.academic_degree %>
-</p>
-
-<p>
-  <strong>Amount pay:</strong>
-  <%= @contract.amount_pay %>
-</p>
-
-<p>
-  <strong>Fractional payment:</strong>
-  <%= @contract.fractional_payment %>
-</p>
-
-<p>
-  <strong>Way to pay:</strong>
-  <%= @contract.way_to_pay %>
-</p>
-
-<p>
-  <strong>Type of service:</strong>
-  <%= @contract.type_of_service %>
-</p>
-
-<p>
-  <strong>Discover:</strong>
-  <%= @contract.discover %>
-</p>
-
-<%= link_to 'Edit', edit_contract_path(@contract) %> |
-<%= link_to 'Back', contracts_path %>
+<div class="row center-xs middle-xs">
+  <div class="col-xs-12 col-sm-10 col-md-8">
+    <div class="box card black-text">
+      <h1 class="title">Información enviada con éxito</h1>
+      <p>Gracias <%= @contract.name %> usted ha aceptado los términos y condiciones </p>
+      <p>Usted recibira una copia en su correo <%=@contract.email%></p>
+      <div class="top-space">
+        <%= link_to 'Volver al inicio', root_path, class: 'btn-info' %>
+      </div>
+    </div>
+  </div>
+</div>
