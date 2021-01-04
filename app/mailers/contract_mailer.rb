@@ -5,7 +5,7 @@ class ContractMailer < ApplicationMailer
 
     def download_contract(contract)
         @contract = contract
-        mail(to: @contract.email, subject: "Contrato Utesis")
+        mail(to: @contract.email, bcc:'admin@utesis.com', subject: "Contrato Utesis")
     end
     
 end
