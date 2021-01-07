@@ -13,7 +13,7 @@
 #  service_to_hire    :string
 #  career             :string
 #  academic_degree    :string
-#  amount_pay         :decimal(, )
+#  amount_pay         :decimal(8, 2)
 #  fractional_payment :integer
 #  way_to_pay         :string
 #  type_of_service    :string

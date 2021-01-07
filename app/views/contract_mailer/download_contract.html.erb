@@ -6,7 +6,26 @@
             <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;">Estimado(a): <span><%= @contract.name %></span> gracias por su confianza, usted ha aceptado los términos y condiciones de nuestro contrato, ahora puede descargar una versión física del mismo.
             <b>RECUERDE ENVIAR SU CONSTANCIA DE PAGO A ESTE MAIL. GRACIAS</b>
             </p>
-            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1HxG2ig27cBbP42r2dH89X_0K6GgMHnfR/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
+            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1eUswguQdMHTFmvD_aUN5dS_vp6AXhL6e/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
+
+            <div>
+                <p><b>Lugar:</b><span><%= @contract.place%></span></p>
+                <p><b>Nombre:</b><span><%= @contract.name%></span></p>
+                <p><b>Número de identificación:</b><span><%= @contract.document_id%></span></p>
+                <p><b>Edad:</b><span><%= @contract.age%></span></p>
+                <p><b>Estado civil:</b><span><%= @contract.marital_status%></span></p>
+                <p><b>Email:</b><span><%= @contract.email%></span></p>
+                <p><b>Télefono:</b><span><%= @contract.phone%></span></p>
+                <p><b>Sevicio que contratara:</b><span><%= @contract.service_to_hire%></span></p>
+                <p><b>Carrera:</b><span><%= @contract.career %></span></p>
+                <p><b>Grado:</b><span><%= @contract.academic_degree%></span></p>
+                <p><b>Monto a pagar:</b><span><%= @contract.amount_pay%></span></p>
+                <p><b>Pagos en que fraccionará el monto total:</b><span><%= @contract.fractional_payment%></span></p>
+                <p><b>Forma de pago:</b><span><%= @contract.way_to_pay %></span></p>
+                <p><b>Tipo de Servicio:</b><span><%= @contract.type_of_service%></span></p>
+                <p><b>Forma en la que se enteró de nosotros:</b><span><%= @contract.discover%></span></p>
+                <p><b>Acepto los Terminos y Condiciones del Contrato:</b><span><%= @contract.reader %></span></p>
+            </div>
         </div>
     </div>
 </div>

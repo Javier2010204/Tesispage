@@ -1,0 +1,21 @@
+<div class="email--background" style="background: #eee; padding: 10px; text-align: center;">
+    <div class="email--container" style="max-width: 500px; background: #fff; margin: 0 auto;overflow: hidden; border-radius: 5px;">
+        <img src="https://res.cloudinary.com/dvyggfmnj/image/upload/v1607615212/480-320_P._etur0l.png" style="max-width: 100%; display: block;">
+
+        <div class="email--inner-container" style="padding: 0 5% 40px;">
+            <p style="font-size: 16px; line-height: 1.5; color: #000;margin-bottom: 30px;">Estimado(a): <span><%= @contact.name %></span> gracias por su confianza, en un momento nuestro equipo lo estara contactando
+            </p>
+            <%= link_to 'Descargar contrato', "https://drive.google.com/file/d/1eUswguQdMHTFmvD_aUN5dS_vp6AXhL6e/view?usp=sharing", style:"display: inline-block;padding: 10px 20px;color: #fff;background: #373629;text-decoration: none;letter-spacing: 2px;text-transform: uppercase;border-radius: 5px;font-size: 13px;", target:"_blank" %>
+
+            <div>
+                <p><b>País:</b><span><%= @contact.country%></span></p>
+                <p><b>Nombre:</b><span><%= @contact.name%></span></p>
+                <p><b>Email:</b><span><%= @contact.email%></span></p>
+                <p><b>Télefono:</b><span><%= @contact.phone%></span></p>
+                <p><b>Carrera:</b><span><%= @contact.career %></span></p>
+                <p><b>Grado:</b><span><%= @contact.academic_degree%></span></p>
+                <p><b>Texto:</b><span><%= @contact.body %></span></p>
+            </div>
+        </div>
+    </div>
+</div>
