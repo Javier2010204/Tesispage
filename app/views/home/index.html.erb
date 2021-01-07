@@ -48,6 +48,12 @@
                     <i class="fas fa-chevron-circle-down faicons black-text"></i>
                 </div>
                 <div class="audio">
+                    <audio id="audio">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3" >
+                    </audio>
+                    <button id="playPauseBTN" onClick="playPause()">
+                        <i id="audioIcon" class="fas fa-volume-mute"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -130,7 +136,34 @@
         </div>
     </div>
 </div>
+<%= javascript_pack_tag 'home' %>
 <script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
+
+<script>
+var audio = document.getElementById("audio");
+var playPauseBTN = document.getElementById("playPauseBTN");
+var count = 0;
+var icon = document.getElementById("audioIcon")
+
+console.log(audio);
+console.log(playPauseBTN);
+console.log(icon);
+
+function playPause(){
+    if(count == 0){
+        count = 1;
+        icon.classList.remove("fa-volume-mute");
+        icon.classList.add("fa-volume-up")
+        audio.play();
+        console.log("play")
+    }else{
+        count = 0;
+        icon.classList.remove("fa-volume-up");
+        icon.classList.add("fa-volume-mute")
+        audio.pause();
+    }
+}
+</script>
 
 <script type="text/javascript">
     $(document).ready(function () {
