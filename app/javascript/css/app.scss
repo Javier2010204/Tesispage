@@ -6,6 +6,10 @@ html, body{
     font-size: 16px;
 }
 
+.aqui{
+    text-decoration: underline !important;
+}
+
 #audioIcon{
     color: #fff;
 }
@@ -206,7 +210,6 @@ html, body{
     color :#fff;
     font-size: 1.5em;
     text-align: left;
-    text-decoration: underline;
 }
 
 .menu-wrap .menu > div > div > ul > li{
@@ -327,6 +330,11 @@ html, body{
 }
 
 @media (min-width: 1024px ) and (max-width: 1680px){
+
+    #youtube{
+        margin-top: 5em;
+    }
+
     #utesis{
         background-image: url('~utesis--logo.jpeg');
     } 

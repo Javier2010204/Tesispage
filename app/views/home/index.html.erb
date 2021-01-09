@@ -14,7 +14,7 @@
                     <li>GUATEMALA: <a href="#" class="text-light">Edificio TEC, Vía 4 1-00 Zona 4 Torre 2 Oficina 401 CONSULTING SUPPORT S.A.</a></li>
                     <li>EL SALVADOR, San Salvador:<a href="#" class="text-light">World Trade Center 89 Avenida Norte y Calle El Mirador, Colonia Escalón Torre I, Segundo Piso</a></li>
                     <li>COSTA RICA: <a href="#" class="text-light">Costado Sur de cc Multiplaza, Edificio Escazú Corporate Center, Piso 6 San Rafael de Escazú, San José</a></li>
-                    <li>COLOMBIA: <a href="#" class="text-light">Bogotá: Edificio QBO Parque 93, Calle 93A, No. 13-24, Piso 5, Bogotá, Cundinamarca, 110221 Medellín: Torre Protección, Carrera 43 A # 1-50, piso 6, Medellín, Antioquia Tel: 3202740254</a></li>
+                    <li>COLOMBIA: <a href="#" class="text-light">Bogotá: Edificio QBO Parque 93, Calle 93A, No. 13-24, Piso 5, Bogotá, Cundinamarca, 110221 Medellín: Torre Protección, Carrera 43 A # 1-50, piso 6, Medellín</a></li>
                     <li>PERÚ: <a href="#" class="text-light">Lima: Calle Dean Valdivia 148, Edif. Platinum Plaza I, piso 11 San Isidro, Lima, 15046</a></li>
                     <li>CHILE: <a href="#" class="text-light">Dirección: Av. El Golf 40, 12th Floor, Santiago, Las Condes, Región Metropolitana.</a></li>
                 </ul>
@@ -34,7 +34,7 @@
                     </ul>
                     <ul>
                         <h4>Politicas</h4>
-                        <li><%= link_to 'Leer términos y condiciones aquí', politicas_path %></li>
+                        <li><span>Leer términos y condiciones</span><%= link_to ' aquí', politicas_path, class: 'aqui' %></li>
                     </ul>
             </div>
         </div>
@@ -44,10 +44,10 @@
     <div class="red section full-height row center-xs middle-xs cover" id="utesis">
         <div class="col-xs-12">
             <div class="box">
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons black-text"></i>
                 </div>
-                <div class="audio">
+                <div class="audio" style="display:none">
                     <audio id="audio">
                         <source src="https://rapidshare.io/97Y/cancion.mp3" >
                     </audio>
@@ -62,8 +62,8 @@
         <div class="col-xs-12">
             <div class="box">
                 <h1 class="title--2">RESPETO AL DERECHO DE AUTOR</h1>
-                <p class="body-font">INVESTIGACIONES SIN PLAGIO Y CON EL DEBIDO RESPETO A LOS DERECHOS DE AUTOR.</p>
-                <div class="top-space--3">
+                <p class="body-font">INVESTIGACIONES SIN PLAGIO Y CON EL DEBIDO RESPETO A LOS DERECHOS DE AUTOR</p>
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
@@ -74,7 +74,7 @@
             <div class="box">
                 <h1 class="title--2">CONFIDENCIALIDAD</h1>
                 <p class="body-font">SECRETO PROFESIONAL: NO REVELAMOS LOS DATOS PERSONALES Y ACADÉMICOS DEL CLIENTE. SE ELIMINA TODA INFORMACIÓN INTERCAMBIADA UNA VEZ TERMINADA LA RELACIÓN CONTRACTUAL</p>
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
@@ -85,7 +85,7 @@
             <div class="box">
                 <h1 class="title--2">EXCLUSIVIDAD</h1>
                 <p class="body-font">DOCUMENTOS 100% INÉDITOS Y NO REUTILIZABLES</p>
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
@@ -96,7 +96,7 @@
             <div class="box">
                 <h1 class="title--2">PROFESIONALISMO</h1>
                 <p class="body-font">SOMOS LA ORGANIZACIÓN DE PROFESIONALES EXPERTOS PARA CADA INVESTIGACIÓN DE LICENCIATURA O POSTGRADO EN TODAS LAS CARRERAS</p>
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
@@ -107,7 +107,7 @@
             <div class="box">
                 <h1 class="title--2">ÉXITO</h1>
                 <p class="body-font">ACOMPAÑAMIENTO Y ASISTENCIA PROFESIONAL DURANTE TODO EL PROCESO HASTA LA FINALIZACIÓN EXITOSA DEL PROCESO DE TESIS</p>
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
@@ -118,7 +118,7 @@
             <div class="box">
                 <h1 class="title--2">LEGALIDAD</h1>
                 <p class="body-font">CONTRATACIÓN CON RESPALDO LEGAL A TRAVÉS DE NUESTROS CONTRATOS DIGITALES</p>
-                <div class="top-space--3">
+                <div class="top-space--3" style="display:none">
                     <i class="fas fa-chevron-circle-down faicons"></i>
                 </div>
             </div>
